@@ -1,19 +1,36 @@
 .header-container{
+    margin-top: 10px;
     list-style: none !important;
     display: flex !important;
+    align-items: center;
+    height: 50px;
     gap: 20px;
     font-size: larger;
     font-weight: bolder;
     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
 }
-
-.header-container li:hover{
-    color: tomato !important;
-    cursor: pointer;
+.header-container ul{
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
 }
 
+.header-container li a:hover{
+    
+    color: white !important;
+    background: tomato !important;
+    cursor: pointer;
+}
+.active{
+    color: white !important;
+    font-weight: bolder;
+    /* background: tomato !important; */
+    padding-top: 8px;
+    border-radius: 3px;
+}
 .logo{
     font-size: xx-large;
+    height: 50px;
     font-weight: 900;
     color: tomato !important;
     font-family: "Concert One", sans-serif;

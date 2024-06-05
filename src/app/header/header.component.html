@@ -1,10 +1,16 @@
 <nav class="flex">
-  <div class="logo">eKart</div>
+  <div class="logo">Kaz Software</div>
   <ul class="header-container">
     <li [routerLinkActive]="'active'"><a routerLink="home"> Home </a></li>
     <li [routerLinkActive]="'active'"><a [routerLink]="'about'">About </a></li>
     <li [routerLinkActive]="'active'">
       <a [routerLink]="['contacts']"> Contact Us </a>
+    </li>
+    <li [routerLinkActive]="'active'">
+      <a [routerLink]="'broadcast'">Broadcast</a>
+    </li>
+    <li [routerLinkActive]="'active'">
+      <a [routerLink]="'observable'">Observable</a>
     </li>
     <!-- <li>{{ data }}</li>  -->
   </ul>

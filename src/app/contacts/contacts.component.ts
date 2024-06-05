@@ -5,6 +5,7 @@ import { Component, OnChanges } from '@angular/core';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })
+
 export class ContactsComponent {
   data: string = '';
   data1: string = '';
@@ -21,8 +22,9 @@ export class ContactsComponent {
     this.data2 = data;
     this.data3 = data;
   }
-
+  
   updateWithData2(data:any):void {
+    console.log('data updated: ', data);
     this.data1 = data;
     this.data3 = data;
   }
