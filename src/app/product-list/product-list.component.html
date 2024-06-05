@@ -1,0 +1,29 @@
+<div class="cart-container">
+  <div class="image"></div>
+  <h3>Name: {{ name }}</h3>
+  <p>Price: ${{ price }}</p>
+  <p>Color: {{ color }}</p>
+  <p>Discounted Price: ${{ getDiscountedPrice() }}</p>
+  <p>{{ stock > 0 ? "Only " + stock + " items left" : "Stock out" }}</p>
+
+  <p>Amount: {{ cart }}</p>
+  <div class="">
+    <button type="button" class="btn btn-primary" (click)="onInc()">+</button>
+    <button type="button" class="btn btn-secondary" (click)="onDec()">-</button>
+    <br />
+  </div>
+  <button type="button" class="btn btn-danger" [disabled]="stock <= 0">
+    Add to Cart
+  </button>
+  <br />
+  <!-- <input
+    type="text"
+    placeholder="write comments"
+    (input)="onChangeName($event)"
+  />
+-->
+  <!-- <p>Comment: {{ message }}</p> -->
+
+  <input [(ngModel)]="searchText" />
+  <p>{{ searchText }}</p>
+</div>

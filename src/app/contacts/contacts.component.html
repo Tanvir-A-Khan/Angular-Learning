@@ -1,0 +1,15 @@
+<div class="padder">
+  <p>the data from parent : {{ data }}</p>
+  <app-comp1
+    [ndata]="data1"
+    (updateDataEvent)="updateWithData1($event)"
+  ></app-comp1>
+  <app-comp2
+    [ndata]="data2"
+    (updateDataEvent)="updateWithData2($event)"
+  ></app-comp2>
+  <app-comp3
+    [ndata]="data3"
+    (updateDataEvent)="updateWithData3($event)"
+  ></app-comp3>
+</div>

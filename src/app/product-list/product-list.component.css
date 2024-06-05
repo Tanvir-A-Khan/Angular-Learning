@@ -1,0 +1,17 @@
+.cart-container{
+    border: 1px solid tomato;
+    border-radius: 5px;
+    padding: 10px;
+    width: fit-content;
+    margin: 10px auto;
+    /* line-height: 0; */
+}
+
+.image{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+    background: #000;
+    margin-bottom: 10px;
+}
